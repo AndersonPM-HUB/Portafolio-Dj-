@@ -1,0 +1,15 @@
+<h1>HOLA BIENVENIDO</h1>
+
+
+{% for proyecto in proyectos %}
+
+<p>{{ proyecto.title}}</P>
+<p>{{ proyecto.description}}</P>
+<img src="{{proyecto.image.url}}" alt="">
+
+{% if proyecto.url %}
+<a href="{{proyecto.url}}">{{proyecto.url}}</a>
+{% endif%}
+
+
+{% endfor %}

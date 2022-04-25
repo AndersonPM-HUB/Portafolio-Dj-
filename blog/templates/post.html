@@ -1,0 +1,14 @@
+<h1>POST</h1>
+
+
+
+{% for p in post %}
+
+    <h1>{{ p.title}}</h1>
+    <h3>{{ p.fecha}}</h3>
+    <p>{{ p.content|truncatechars:100}}</P>
+    <img src="{{p.image.url}}" alt="">
+
+
+
+{% endfor %}
